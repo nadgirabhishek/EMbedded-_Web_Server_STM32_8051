@@ -1,0 +1,6 @@
+../Src/uart_functions.c:16:6:uart_getchar	8	static
+../Src/uart_functions.c:30:6:uart_putchar	16	static
+../Src/uart_functions.c:43:5:__io_getchar	16	static
+../Src/uart_functions.c:64:5:__io_putchar	16	static
+../Src/uart_functions.c:86:6:uart_echo	24	static
+../Src/uart_functions.c:103:6:uart_printstring	16	static

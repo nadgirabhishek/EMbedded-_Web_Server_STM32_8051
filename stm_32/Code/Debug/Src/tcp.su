@@ -1,0 +1,6 @@
+../Src/tcp.c:19:10:calculate_checksum	24	static
+../Src/tcp.c:41:10:calculate_tcp_checksum	40	static
+../Src/tcp.c:66:10:process_tcp_packet	96	static
+../Src/tcp.c:163:6:print_hexdump	32	static
+../Src/tcp.c:176:6:process_packet_from_buffer	48	static
+../Src/tcp.c:244:6:transmit_tcp_packet	32	static

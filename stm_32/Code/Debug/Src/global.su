@@ -1,0 +1,2 @@
+../Src/global.c:15:6:USART2_IRQHandler	16	static
+../Src/global.c:43:6:SysTick_Handler	8	static

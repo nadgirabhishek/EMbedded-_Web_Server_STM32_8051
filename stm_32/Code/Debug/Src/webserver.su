@@ -1,0 +1,14 @@
+../Src/webserver.c:113:10:packetReceive	32	static
+../Src/webserver.c:199:6:makeArpReply	8	static
+../Src/webserver.c:257:6:calculateIPChecksum	32	static
+../Src/webserver.c:283:6:calculateTcpChecksum	32	static
+../Src/webserver.c:327:6:makeTcpFinPshAck	1064	static
+../Src/webserver.c:420:6:makeTcpAck3	40	static
+../Src/webserver.c:490:6:makeTcpAck2	48	static
+../Src/webserver.c:562:6:makeTcpSynAck	40	static
+../Src/webserver.c:624:6:makeHttpResponse	80	static
+../Src/webserver.c:738:6:makeTcpAck	8	static
+../Src/webserver.c:748:6:trial_arp_request	56	static
+../Src/webserver.c:770:6:refreshArp	16	static
+../Src/webserver.c:787:6:packetLoop	24	static
+../Src/webserver.c:857:10:getSystemTick	8	static

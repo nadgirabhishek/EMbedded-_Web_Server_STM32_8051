@@ -1,0 +1,6 @@
+../Inc/Eth.c:12:6:enc28j60_set_transmit_pointers	16	static
+../Inc/Eth.c:23:6:delay_ms	24	static
+../Inc/Eth.c:30:6:enc28j60_start_transmission	24	static
+../Inc/Eth.c:38:6:wait_for_transmission_complete	32	static
+../Inc/Eth.c:55:6:enc28j60_transmission_successful	24	static
+../Inc/Eth.c:62:6:send_simple_packet	136	static

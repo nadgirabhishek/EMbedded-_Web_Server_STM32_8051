@@ -1,0 +1,3 @@
+../Src/spi.c:11:6:SPI_Init	8	static
+../Src/spi.c:34:6:SPI_WriteByte	32	static
+../Src/spi.c:57:9:SPI_ReadByte	24	static
