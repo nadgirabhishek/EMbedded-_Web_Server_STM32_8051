@@ -8,6 +8,8 @@
  * This file provides the implementation for transmitting TCP packets over the network
  * using the ENC28J60 Ethernet controller. It handles writing the packet to the buffer,
  * setting transmission pointers, starting the transmission, and checking for completion.
+ * [Reference] : The TCP response functions implemented in this file are referenced from: Arduino Ethercard Library 
+ *
  ******************************************************************************/
 
 #include "tcp.h"
