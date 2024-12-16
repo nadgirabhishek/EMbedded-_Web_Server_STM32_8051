@@ -8,7 +8,8 @@
 
 #include "spi.h"
 
-void SPI_Init(void) {
+void SPI_Init(void) 
+{
 	// Enable GPIOB clock
 	RCC->AHBENR |= RCC_AHBENR_GPIOBEN;
 

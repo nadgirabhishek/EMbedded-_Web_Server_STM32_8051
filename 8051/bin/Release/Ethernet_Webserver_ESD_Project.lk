@@ -1,0 +1,27 @@
+-muwx
+-i bin\Release\Ethernet_Webserver_ESD_Project.ihx
+-M
+-I 0x0100
+-X 0x7fff
+-C 0x8000
+-b HOME = 0x2000
+-b XSEG = 0x0100
+-b PSEG = 0x0100
+-b ISEG = 0x0000
+-b BSEG = 0x0000
+-k C:\Program Files (x86)\SDCC\include
+-k C:\Program Files (x86)\SDCC\bin\..\lib\large
+-l mcs51
+-l libsdcc
+-l libint
+-l liblong
+-l libfloat
+obj\Release\arp.rel
+obj\Release\enc.rel
+obj\Release\main.rel
+obj\Release\spi.rel
+obj\Release\tcp.rel
+obj\Release\Utilities.rel
+obj\Release\webserver.rel
+
+-e

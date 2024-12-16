@@ -1,0 +1,654 @@
+ASxxxx Linker V03.00/V05.40 + sdld,  page 1.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CABS                                00000000    00000000 =           0. bytes (ABS,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000000  l_BIT_BANK                      
+C:   00000000  l_CABS                          
+C:   00000000  l_GSINIT1                       
+C:   00000000  l_GSINIT5                       
+C:   00000000  l_IABS                          
+C:   00000000  l_ISEG                          
+C:   00000000  l_PSEG                          
+C:   00000000  l_REG_BANK_1                    
+C:   00000000  l_REG_BANK_2                    
+C:   00000000  l_REG_BANK_3                    
+C:   00000000  l_RSEG                          
+C:   00000000  l_RSEG0                         
+C:   00000000  l_RSEG1                         
+C:   00000000  l_XABS                          
+C:   00000000  l__CODE                         
+C:   00000000  s_BSEG                          
+C:   00000000  s_CABS                          
+C:   00000000  s_DSEG                          
+C:   00000000  s_IABS                          
+C:   00000000  s_ISEG                          
+C:   00000000  s_REG_BANK_0                    
+C:   00000000  s_RSEG                          
+C:   00000000  s_RSEG0                         
+C:   00000000  s_RSEG1                         
+C:   00000000  s_XABS                          
+C:   00000001  l_BSEG                          
+C:   00000001  l_BSEG_BYTES                    
+C:   00000001  l_XINIT                         
+C:   00000001  l_XISEG                         
+C:   00000003  l_GSFINAL                       
+C:   00000003  l_GSINIT0                       
+C:   00000008  l_REG_BANK_0                    
+C:   00000008  s_REG_BANK_1                    
+C:   0000000A  l_GSINIT2                       
+C:   0000000B  l_GSINIT                        
+C:   00000010  l_OSEG                          
+C:   00000010  s_REG_BANK_2                    
+C:   00000018  s_BIT_BANK                      
+C:   00000018  s_REG_BANK_3                    
+C:   00000020  s_BSEG_BYTES                    
+C:   00000020  s__CODE                         
+C:   00000022  l_GSINIT3                       
+C:   0000002A  l_GSINIT4                       
+C:   00000034  l_HOME                          
+C:   00000047  s_OSEG                          
+C:   00000057  s_SSEG                          
+C:   0000007F  l_DSEG                          
+C:   000000A9  l_SSEG                          
+C:   00000100  l_IRAM                          
+C:   00000100  s_PSEG                          
+ASxxxx Linker V03.00/V05.40 + sdld,  page 2.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CABS                                00000000    00000000 =           0. bytes (ABS,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000100  s_XSEG                          
+C:   000007DE  l_XSEG                          
+C:   000008DE  s_XISEG                         
+C:   00000A5D  l_CONST                         
+C:   00002000  s_HOME                          
+C:   00002034  s_GSINIT0                       
+C:   00002037  s_GSINIT1                       
+C:   00002037  s_GSINIT2                       
+C:   00002041  s_GSINIT3                       
+C:   00002063  s_GSINIT4                       
+C:   0000208D  s_GSINIT                        
+C:   0000208D  s_GSINIT5                       
+C:   00002098  s_GSFINAL                       
+C:   0000209B  s_CSEG                          
+C:   00003C0C  l_CSEG                          
+C:   00005CA7  s_CONST                         
+C:   00006704  s_XINIT                         
+
+ASxxxx Linker V03.00/V05.40 + sdld,  page 3.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000000  .__.ABS.                           _startup
+     00000080  _P0                                webserver
+     00000080  _P0_0                              webserver
+     00000081  _P0_1                              webserver
+     00000081  _SP                                webserver
+     00000082  _DPL                               webserver
+     00000082  _P0_2                              webserver
+     00000083  _DPH                               webserver
+     00000083  _P0_3                              webserver
+     00000084  _P0_4                              webserver
+     00000085  _P0_5                              webserver
+     00000086  _P0_6                              webserver
+     00000087  _P0_7                              webserver
+     00000087  _PCON                              webserver
+     00000088  _IT0                               webserver
+     00000088  _TCON                              webserver
+     00000089  _IE0                               webserver
+     00000089  _TMOD                              webserver
+     0000008A  _IT1                               webserver
+     0000008A  _TL0                               webserver
+     0000008B  _IE1                               webserver
+     0000008B  _TL1                               webserver
+     0000008C  _TH0                               webserver
+     0000008C  _TR0                               webserver
+     0000008D  _TF0                               webserver
+     0000008D  _TH1                               webserver
+     0000008E  _AUXR                              webserver
+     0000008E  _TR1                               webserver
+     0000008F  _CKCON0                            webserver
+     0000008F  _TF1                               webserver
+     00000090  _P1                                webserver
+     00000090  _P1_0                              webserver
+     00000091  _P1_1                              webserver
+     00000092  _P1_2                              webserver
+     00000093  _P1_3                              webserver
+     00000094  _P1_4                              webserver
+     00000095  _P1_5                              webserver
+     00000096  _P1_6                              webserver
+     00000097  _CKRL                              webserver
+     00000097  _P1_7                              webserver
+     00000098  _RI                                webserver
+     00000098  _SCON                              webserver
+     00000099  _SBUF                              webserver
+     00000099  _TI                                webserver
+     0000009A  _BRL                               webserver
+     0000009A  _RB8                               webserver
+     0000009B  _BDRCON                            webserver
+     0000009B  _TB8                               webserver
+     0000009C  _KBLS                              webserver
+     0000009C  _REN                               webserver
+ASxxxx Linker V03.00/V05.40 + sdld,  page 4.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     0000009D  _KBE                               webserver
+     0000009D  _SM2                               webserver
+     0000009E  _KBF                               webserver
+     0000009E  _SM1                               webserver
+     0000009F  _SM0                               webserver
+     000000A0  _P2                                webserver
+     000000A0  _P2_0                              webserver
+     000000A0  __XPAGE                            
+     000000A1  _P2_1                              webserver
+     000000A2  _AUXR1                             webserver
+     000000A2  _P2_2                              webserver
+     000000A3  _P2_3                              webserver
+     000000A4  _P2_4                              webserver
+     000000A5  _P2_5                              webserver
+     000000A6  _P2_6                              webserver
+     000000A6  _WDTRST                            webserver
+     000000A7  _P2_7                              webserver
+     000000A7  _WDTPRG                            webserver
+     000000A8  _EX0                               webserver
+     000000A8  _IE                                webserver
+     000000A8  _IEN0                              webserver
+     000000A9  _ET0                               webserver
+     000000A9  _SADDR                             webserver
+     000000AA  _EX1                               webserver
+     000000AB  _ET1                               webserver
+     000000AC  _ES                                webserver
+     000000AD  _ET2                               webserver
+     000000AE  _EC                                webserver
+     000000AF  _CKCON1                            webserver
+     000000AF  _EA                                webserver
+     000000B0  _P3                                webserver
+     000000B0  _P3_0                              webserver
+     000000B0  _RXD                               webserver
+     000000B1  _IEN1                              webserver
+     000000B1  _P3_1                              webserver
+     000000B1  _TXD                               webserver
+     000000B2  _INT0                              webserver
+     000000B2  _IPL1                              webserver
+     000000B2  _P3_2                              webserver
+     000000B3  _INT1                              webserver
+     000000B3  _IPH1                              webserver
+     000000B3  _P3_3                              webserver
+     000000B4  _P3_4                              webserver
+     000000B4  _T0                                webserver
+     000000B5  _P3_5                              webserver
+     000000B5  _T1                                webserver
+     000000B6  _P3_6                              webserver
+     000000B6  _WR                                webserver
+     000000B7  _IPH0                              webserver
+     000000B7  _P3_7                              webserver
+     000000B7  _RD                                webserver
+ASxxxx Linker V03.00/V05.40 + sdld,  page 5.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000000B8  _IP                                webserver
+     000000B8  _IPL0                              webserver
+     000000B8  _PX0                               webserver
+     000000B8  _PX0L                              webserver
+     000000B9  _PT0                               webserver
+     000000B9  _PT0L                              webserver
+     000000B9  _SADEN                             webserver
+     000000BA  _PX1                               webserver
+     000000BA  _PX1L                              webserver
+     000000BB  _PT1                               webserver
+     000000BB  _PT1L                              webserver
+     000000BC  _PS                                webserver
+     000000BC  _PSL                               webserver
+     000000BD  _PT2                               webserver
+     000000BD  _PT2L                              webserver
+     000000BE  _PPCL                              webserver
+     000000C0  _P4                                webserver
+     000000C0  _P4_0                              webserver
+     000000C1  _P4_1                              webserver
+     000000C2  _P4_2                              webserver
+     000000C3  _P4_3                              webserver
+     000000C3  _SPCON                             webserver
+     000000C4  _P4_4                              webserver
+     000000C4  _SPSTA                             webserver
+     000000C5  _P4_5                              webserver
+     000000C5  _SPDAT                             webserver
+     000000C6  _P4_6                              webserver
+     000000C7  _P4_7                              webserver
+     000000C8  _CP_RL2                            webserver
+     000000C8  _T2CON                             webserver
+     000000C8  _T2CON_0                           webserver
+     000000C9  _C_T2                              webserver
+     000000C9  _T2CON_1                           webserver
+     000000C9  _T2MOD                             webserver
+     000000CA  _RCAP2L                            webserver
+     000000CA  _T2CON_2                           webserver
+     000000CA  _TR2                               webserver
+     000000CB  _EXEN2                             webserver
+     000000CB  _RCAP2H                            webserver
+     000000CB  _T2CON_3                           webserver
+     000000CC  _T2CON_4                           webserver
+     000000CC  _TCLK                              webserver
+     000000CC  _TL2                               webserver
+     000000CD  _RCLK                              webserver
+     000000CD  _T2CON_5                           webserver
+     000000CD  _TH2                               webserver
+     000000CE  _EXF2                              webserver
+     000000CE  _T2CON_6                           webserver
+     000000CF  _T2CON_7                           webserver
+     000000CF  _TF2                               webserver
+     000000D0  _P                                 webserver
+ASxxxx Linker V03.00/V05.40 + sdld,  page 6.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000000D0  _PSW                               webserver
+     000000D1  _F1                                webserver
+     000000D2  _EECON                             webserver
+     000000D2  _OV                                webserver
+     000000D3  _RS0                               webserver
+     000000D4  _RS1                               webserver
+     000000D5  _F0                                webserver
+     000000D6  _AC                                webserver
+     000000D7  _CY                                webserver
+     000000D8  _CCF0                              webserver
+     000000D8  _CCON                              webserver
+     000000D9  _CCF1                              webserver
+     000000D9  _CMOD                              webserver
+     000000DA  _CCAPM0                            webserver
+     000000DA  _CCF2                              webserver
+     000000DB  _CCAPM1                            webserver
+     000000DB  _CCF3                              webserver
+     000000DC  _CCAPM2                            webserver
+     000000DC  _CCF4                              webserver
+     000000DD  _CCAPM3                            webserver
+     000000DE  _CCAPM4                            webserver
+     000000DE  _CR                                webserver
+     000000DF  _CF                                webserver
+     000000E0  _ACC                               webserver
+     000000E8  _P5                                webserver
+     000000E8  _P5_0                              webserver
+     000000E9  _CL                                webserver
+     000000E9  _P5_1                              webserver
+     000000EA  _CCAP0L                            webserver
+     000000EA  _P5_2                              webserver
+     000000EB  _CCAP1L                            webserver
+     000000EB  _P5_3                              webserver
+     000000EC  _CCAP2L                            webserver
+     000000EC  _P5_4                              webserver
+     000000ED  _CCAP3L                            webserver
+     000000ED  _P5_5                              webserver
+     000000EE  _CCAP4L                            webserver
+     000000EE  _P5_6                              webserver
+     000000EF  _P5_7                              webserver
+     000000F0  _B                                 webserver
+     000000F5  _B_5                               _gptrget
+     000000F6  _B_6                               _gptrget
+     000000F7  _B_7                               _gptrget
+     000000F9  _CH                                webserver
+     000000FA  _CCAP0H                            webserver
+     000000FB  _CCAP1H                            webserver
+     000000FC  _CCAP2H                            webserver
+     000000FD  _CCAP3H                            webserver
+     000000FE  _CCAP4H                            webserver
+ASxxxx Linker V03.00/V05.40 + sdld,  page 7.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+BSEG_BYTES                          00000020    00000001 =           1. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00/V05.40 + sdld,  page 8.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+REG_BANK_0                          00000000    00000008 =           8. bytes (REL,OVR)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00/V05.40 + sdld,  page 9.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+DSEG                                00000000    0000007F =         127. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000014  _bp                                _bp
+
+ASxxxx Linker V03.00/V05.40 + sdld,  page 10.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+OSEG                                00000047    00000010 =          16. bytes (REL,OVR)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00/V05.40 + sdld,  page 11.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+SSEG                                00000057    000000A9 =         169. bytes (REL,OVR)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000057  __start__stack                     main
+
+ASxxxx Linker V03.00/V05.40 + sdld,  page 12.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+XSEG                                00000100    000007DE =        2014. bytes (REL,CON,XDATA)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+D:   00000106  _enc28j60_set_transmit_pointers_   arp
+D:   00000150  _enc_control_write_PARM_2          enc
+D:   00000151  _enc_control_write_PARM_3          enc
+D:   00000154  _enc_buffer_init_PARM_2            enc
+D:   00000158  _enc_buffer_write_PARM_2           enc
+D:   0000015A  _enc_buffer_write_PARM_3           enc
+D:   0000015F  _enc_buffer_read_PARM_2            enc
+D:   00000161  _enc_buffer_read_PARM_3            enc
+D:   00000166  _enc_mac_read_PARM_2               enc
+D:   0000016A  _enc_phy_write_PARM_2              enc
+D:   0000016D  _enc_eth_read_PARM_2               enc
+D:   00000172  _enc_bit_set_PARM_2                enc
+D:   00000174  _enc_bit_clear_PARM_2              enc
+D:   0000018C  _transmit_tcp_packet_PARM_2        tcp
+D:   000001A7  _buffer                            webserver
+D:   00000783  _prevSeq                           webserver
+D:   00000787  _prevAck                           webserver
+D:   00000891  ___memcpy_PARM_2                   __memcpy
+D:   00000894  ___memcpy_PARM_3                   __memcpy
+D:   00000899  _memset_PARM_2                     _memset
+D:   0000089A  _memset_PARM_3                     _memset
+D:   0000089C  __gptrput_PARM_2                   _gptrput
+D:   0000089D  _memmove_PARM_2                    _memmove
+D:   000008A0  _memmove_PARM_3                    _memmove
+D:   000008A5  __mulint_PARM_2                    _mulint
+D:   000008A7  _vprintf_PARM_2                    vprintf
+D:   000008BC  __print_format_PARM_2              printf_large
+D:   000008BF  __print_format_PARM_3              printf_large
+D:   000008C2  __print_format_PARM_4              printf_large
+
+ASxxxx Linker V03.00/V05.40 + sdld,  page 13.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+XISEG                               000008DE    00000001 =           1. bytes (REL,CON,XDATA)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+D:   000008DE  _connectionState                   webserver
+
+ASxxxx Linker V03.00/V05.40 + sdld,  page 14.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+HOME                                00002000    00000034 =          52. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00002003  __sdcc_program_startup             main
+C:   00002006  ___gptr_cmp                        
+
+ASxxxx Linker V03.00/V05.40 + sdld,  page 15.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSINIT0                             00002034    00000003 =           3. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00002034  __sdcc_gsinit_startup              
+
+ASxxxx Linker V03.00/V05.40 + sdld,  page 16.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSINIT2                             00002037    0000000A =          10. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00/V05.40 + sdld,  page 17.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSINIT3                             00002041    00000022 =          34. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00002041  __mcs51_genXINIT                   
+
+ASxxxx Linker V03.00/V05.40 + sdld,  page 18.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSINIT4                             00002063    0000002A =          42. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00002063  __mcs51_genRAMCLEAR                
+C:   00002069  __mcs51_genXRAMCLEAR               
+
+ASxxxx Linker V03.00/V05.40 + sdld,  page 19.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSINIT                              0000208D    0000000B =          11. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00/V05.40 + sdld,  page 20.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSFINAL                             00002098    00000003 =           3. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00/V05.40 + sdld,  page 21.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                0000209B    00003C0C =       15372. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   0000209B  _delay_ms                          arp
+C:   0000211C  _enc28j60_start_transmission       arp
+C:   0000213D  _enc28j60_set_transmit_pointers    arp
+C:   000021B4  _wait_for_transmission_complete    arp
+C:   00002217  _enc28j60_transmission_successfu   arp
+C:   00002231  _set_mac_address                   arp
+C:   0000236A  _arp_request                       arp
+C:   000025B3  _enc_set_autoinc                   enc
+C:   000025D9  _enc_select_reg_bank               enc
+C:   00002662  _enc_control_write                 enc
+C:   00002697  _enc_buffer_init                   enc
+C:   0000280A  _enc_buffer_write                  enc
+C:   00002957  _enc_buffer_read                   enc
+C:   00002AA5  _enc_mac_read                      enc
+C:   00002B13  _enc_busy_wait                     enc
+C:   00002B41  _enc_phy_read                      enc
+C:   00002BDE  _enc_phy_write                     enc
+C:   00002C59  _enc_eth_read                      enc
+C:   00002C9C  _enc_reset                         enc
+C:   00002CA7  _enc_init                          enc
+C:   00003053  _enc_bit_set                       enc
+C:   00003070  _enc_bit_clear                     enc
+C:   0000308D  _init_PCA                          main
+C:   00003093  _start_X2                          main
+C:   00003097  _end_X2                            main
+C:   0000309B  _main                              main
+C:   00003132  _SPI_Init                          spi
+C:   00003141  _SPI_WriteByte                     spi
+C:   00003150  _SPI_ReadByte                      spi
+C:   00003162  _transmit_tcp_packet               tcp
+C:   00003241  _putchar                           Utilities
+C:   00003260  _getchar                           Utilities
+C:   0000326E  _putstr                            Utilities
+C:   000032E4  _hex_to_int                        Utilities
+C:   0000349E  _get_user_buffer_size              Utilities
+C:   00003522  _packetReceive                     webserver
+C:   0000374A  _makeArpReply                      webserver
+C:   000038B9  _calculateIPChecksum               webserver
+C:   00003A23  _calculateTcpChecksum              webserver
+C:   00003D0C  _makeTcpFinPshAck                  webserver
+C:   00003F71  _makeTcpAck3                       webserver
+C:   00004225  _makeTcpAck2                       webserver
+C:   00004513  _makeTcpSynAck                     webserver
+C:   000047A7  _makeHttpResponse                  webserver
+C:   00004AB4  _makeTcpAck                        webserver
+C:   00004B6F  _trial_arp_request                 webserver
+C:   00004D92  _packetLoop                        webserver
+C:   00004EFC  ___memcpy                          __memcpy
+C:   00004F70  _memset                            _memset
+C:   00004F98  __gptrput                          _gptrput
+ASxxxx Linker V03.00/V05.40 + sdld,  page 22.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                0000209B    00003C0C =       15372. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00004FB3  _memmove                           _memmove
+C:   000050EE  _printf_tiny                       printf_tiny
+C:   000051F7  __mulint                           _mulint
+C:   00005226  _vprintf                           vprintf
+C:   00005265  _printf                            vprintf
+C:   0000536B  __print_format                     printf_large
+C:   00005C6F  _strlen                            _strlen
+C:   00005C87  __gptrget                          _gptrget
+C:   00005CA3  ___sdcc_external_startup           _startup
+
+ASxxxx Linker V03.00/V05.40 + sdld,  page 23.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CONST                               00005CA7    00000A5D =        2653. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00/V05.40 + sdld,  page 24.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+XINIT                               00006704    00000001 =           1. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00/V05.40 + sdld,  page 25.
+
+Files Linked                              [ module(s) ]
+
+obj\Release\arp.rel                       [  ]
+obj\Release\enc.rel                       [  ]
+obj\Release\main.rel                      [  ]
+obj\Release\spi.rel                       [  ]
+obj\Release\tcp.rel                       [  ]
+obj\Release\Utilities.rel                 [  ]
+obj\Release\webserver.rel                 [  ]
+
+
+Libraries Linked                          [ object file ]
+
+C:\Program Files (x86)\SDCC\bin\..\lib\large/mcs51.lib
+                                          [ crtclear.rel ]
+C:\Program Files (x86)\SDCC\bin\..\lib\large/libsdcc.lib
+                                          [ __memcpy.rel ]
+C:\Program Files (x86)\SDCC\bin\..\lib\large/libsdcc.lib
+                                          [ _memset.rel ]
+C:\Program Files (x86)\SDCC\bin\..\lib\large/mcs51.lib
+                                          [ crtxinit.rel ]
+C:\Program Files (x86)\SDCC\bin\..\lib\large/libsdcc.lib
+                                          [ _gptrput.rel ]
+C:\Program Files (x86)\SDCC\bin\..\lib\large/libsdcc.lib
+                                          [ _memmove.rel ]
+C:\Program Files (x86)\SDCC\bin\..\lib\large/libsdcc.lib
+                                          [ printf_tiny.rel ]
+C:\Program Files (x86)\SDCC\bin\..\lib\large/libint.lib
+                                          [ _mulint.rel ]
+C:\Program Files (x86)\SDCC\bin\..\lib\large/mcs51.lib
+                                          [ crtxclear.rel ]
+C:\Program Files (x86)\SDCC\bin\..\lib\large/libsdcc.lib
+                                          [ _bp.rel ]
+C:\Program Files (x86)\SDCC\bin\..\lib\large/libsdcc.lib
+                                          [ vprintf.rel ]
+C:\Program Files (x86)\SDCC\bin\..\lib\large/libsdcc.lib
+                                          [ printf_large.rel ]
+C:\Program Files (x86)\SDCC\bin\..\lib\large/mcs51.lib
+                                          [ crtpagesfr.rel ]
+C:\Program Files (x86)\SDCC\bin\..\lib\large/libsdcc.lib
+                                          [ _strlen.rel ]
+C:\Program Files (x86)\SDCC\bin\..\lib\large/mcs51.lib
+                                          [ gptr_cmp.rel ]
+C:\Program Files (x86)\SDCC\bin\..\lib\large/mcs51.lib
+                                          [ crtstart.rel ]
+C:\Program Files (x86)\SDCC\bin\..\lib\large/libsdcc.lib
+                                          [ _gptrget.rel ]
+C:\Program Files (x86)\SDCC\bin\..\lib\large/libsdcc.lib
+                                          [ _startup.rel ]
+
+ASxxxx Linker V03.00/V05.40 + sdld,  page 26.
+
+User Base Address Definitions
+
+HOME = 0x2000
+XSEG = 0x0100
+PSEG = 0x0100
+ISEG = 0x0000
+BSEG = 0x0000
+
+

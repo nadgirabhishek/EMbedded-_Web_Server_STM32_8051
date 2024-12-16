@@ -1,0 +1,121 @@
+# depslib dependency file v1.0
+1733724509 source:d:\universityofcoloradoboulder\sem1\esd\final project\github\ethernetwebserver_esd_finalproject\ethernet_webserver_esd_project\main.c
+	"SPI.h"
+	"Operations.h"
+	"Eth.h"
+	"tcp.h"
+	"trial_webserver.h"
+
+1732310356 d:\universityofcoloradoboulder\sem1\esd\final project\github\ethernetwebserver_esd_finalproject\ethernet_webserver_esd_project\global_header.h
+
+1733718933 source:d:\universityofcoloradoboulder\sem1\esd\final project\github\ethernetwebserver_esd_finalproject\ethernet_webserver_esd_project\utilities.c
+	"Utilities.h"
+
+1733718933 d:\universityofcoloradoboulder\sem1\esd\final project\github\ethernetwebserver_esd_finalproject\ethernet_webserver_esd_project\utilities.h
+	"SPI.h"
+
+1733718933 d:\universityofcoloradoboulder\sem1\esd\final project\github\ethernetwebserver_esd_finalproject\ethernet_webserver_esd_project\spi.h
+	<mcs51/8051.h>
+	<stdio.h>
+	<stdlib.h>
+	<at89c51ed2.h>
+	<mcs51reg.h>
+	<stdint.h>
+	"Eth.h"
+
+1733718933 d:\universityofcoloradoboulder\sem1\esd\final project\github\ethernetwebserver_esd_finalproject\ethernet_webserver_esd_project\operations.h
+	"SPI.h"
+
+1733724819 source:d:\universityofcoloradoboulder\sem1\esd\final project\github\ethernetwebserver_esd_finalproject\ethernet_webserver_esd_project\spi.c
+	"SPI.h"
+
+1733718933 source:d:\universityofcoloradoboulder\sem1\esd\final project\github\ethernetwebserver_esd_finalproject\ethernet_webserver_esd_project\operations.c
+	"Operations.h"
+
+1733725479 d:\universityofcoloradoboulder\sem1\esd\final project\github\ethernetwebserver_esd_finalproject\ethernet_webserver_esd_project\eth.h
+	"SPI.h"
+	"tcp.h"
+	<stdint.h>
+	<stdio.h>
+	<stdbool.h>
+
+1733719898 source:d:\universityofcoloradoboulder\sem1\esd\final project\github\ethernetwebserver_esd_finalproject\ethernet_webserver_esd_project\eth.c
+	"Eth.h"
+
+1733728220 source:d:\universityofcoloradoboulder\sem1\esd\final project\github\ethernetwebserver_esd_finalproject\ethernet_webserver_esd_project\tcp.c
+	"tcp.h"
+
+1733723189 d:\universityofcoloradoboulder\sem1\esd\final project\github\ethernetwebserver_esd_finalproject\ethernet_webserver_esd_project\tcp.h
+	<stdint.h>
+	<string.h>
+	"Eth.h"
+	<stdint.h>
+
+1733724509 d:\universityofcoloradoboulder\sem1\esd\final project\github\ethernetwebserver_esd_finalproject\ethernet_webserver_esd_project\trial_webserver.h
+	<stdint.h>
+	<stdbool.h>
+	<string.h>
+	"SPI.h"
+	"tcp.h"
+
+1733727257 source:d:\universityofcoloradoboulder\sem1\esd\final project\github\ethernetwebserver_esd_finalproject\ethernet_webserver_esd_project\trial_webserver.c
+	"trial_webserver.h"
+
+1734311428 source:d:\universityofcoloradoboulder\sem1\esd\final project\8051_retry_bring_from_stm\ethernet_webserver_esd_project\main.c
+	"global.h"
+
+1734312021 d:\universityofcoloradoboulder\sem1\esd\final project\8051_retry_bring_from_stm\ethernet_webserver_esd_project\global.h
+	"Utilities.h"
+	"spi.h"
+	"enc.h"
+	"tcp.h"
+	"arp.h"
+	"webserver.h"
+	<stdio.h>
+	<mcs51/8051.h>
+	<mcs51/at89c51ed2.h>
+	<stdint.h>
+
+1734311936 d:\universityofcoloradoboulder\sem1\esd\final project\8051_retry_bring_from_stm\ethernet_webserver_esd_project\utilities.h
+	"global.h"
+	"stdint.h"
+
+1734311527 source:d:\universityofcoloradoboulder\sem1\esd\final project\8051_retry_bring_from_stm\ethernet_webserver_esd_project\utilities.c
+	"Utilities.h"
+
+1734311439 source:d:\universityofcoloradoboulder\sem1\esd\final project\8051_retry_bring_from_stm\ethernet_webserver_esd_project\spi.c
+	"spi.h"
+
+1734311853 d:\universityofcoloradoboulder\sem1\esd\final project\8051_retry_bring_from_stm\ethernet_webserver_esd_project\spi.h
+	"global.h"
+	"stdint.h"
+
+1734311785 d:\universityofcoloradoboulder\sem1\esd\final project\8051_retry_bring_from_stm\ethernet_webserver_esd_project\enc.h
+	"global.h"
+	"stdint.h"
+
+1734311384 source:d:\universityofcoloradoboulder\sem1\esd\final project\8051_retry_bring_from_stm\ethernet_webserver_esd_project\enc.c
+	"enc.h"
+
+1734311913 d:\universityofcoloradoboulder\sem1\esd\final project\8051_retry_bring_from_stm\ethernet_webserver_esd_project\tcp.h
+	"global.h"
+
+1734312013 d:\universityofcoloradoboulder\sem1\esd\final project\8051_retry_bring_from_stm\ethernet_webserver_esd_project\webserver.h
+	"global.h"
+	<stdint.h>
+	<stdbool.h>
+	<string.h>
+
+1734311537 source:d:\universityofcoloradoboulder\sem1\esd\final project\8051_retry_bring_from_stm\ethernet_webserver_esd_project\webserver.c
+	"webserver.h"
+
+1734311755 d:\universityofcoloradoboulder\sem1\esd\final project\8051_retry_bring_from_stm\ethernet_webserver_esd_project\arp.h
+	"global.h"
+	<stdbool.h>
+
+1734311669 source:d:\universityofcoloradoboulder\sem1\esd\final project\8051_retry_bring_from_stm\ethernet_webserver_esd_project\arp.c
+	"arp.h"
+
+1734311463 source:d:\universityofcoloradoboulder\sem1\esd\final project\8051_retry_bring_from_stm\ethernet_webserver_esd_project\tcp.c
+	"tcp.h"
+
