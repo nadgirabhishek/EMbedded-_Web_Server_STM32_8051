@@ -4,7 +4,6 @@
  *              functions, including initialization, write, and read operations.
  * @author      Abhishek Koppa
  * @date        December 05, 2024
- * @version     1.0
  ******************************************************************************/
 
 

@@ -9,6 +9,7 @@
  *                - Set the vector table entries with the exceptions ISR address
  *                - Branches to main in the C library (which eventually
  *                  calls main()).
+[Reference]: This startup file has been referenced from PES assignment 6. 
  ******************************************************************************
  * @attention
  *

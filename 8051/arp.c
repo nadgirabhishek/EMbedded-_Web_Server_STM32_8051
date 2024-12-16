@@ -27,9 +27,6 @@ void delay_ms(uint16_t ms)
 
 	for (volatile uint32_t i = 0; i < ms * 1000; i++) 
 	{
-
-		
-
 	}
 
 }

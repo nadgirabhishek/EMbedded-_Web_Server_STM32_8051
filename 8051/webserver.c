@@ -6,7 +6,7 @@
  * @details     This file contains functions for receiving packets, 
  *              responding to ARP requests, managing TCP connection states, 
  *              and calculating IP and TCP checksums for packet integrity.
- * 				[Reference] : The TCP response functions impplemented in this file are referenced from: 
+ * 				[Reference] : The TCP response functions implemented in this file are referenced from: Arduino Ethercard Library 
  *
  * @author      Abhishek Koppa
  * @date        December 05, 2024

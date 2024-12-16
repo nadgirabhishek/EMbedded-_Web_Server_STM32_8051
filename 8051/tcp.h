@@ -5,7 +5,6 @@
  *              including packet processing, checksum calculation, and transmission.
  * @author      Abhishek Koppa
  * @date        December 06, 2024
- * @version     1.0
  ******************************************************************************/
 
 

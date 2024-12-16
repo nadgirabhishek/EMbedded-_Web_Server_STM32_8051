@@ -13,7 +13,8 @@
  * software. <Abhishek Nadgir> and the University of Colorado are not liable for
  * any misuse of this material.
  *
- * Reference used: Programming in C, Fourth Edition by Stephen G. Kochan
+ * [Reference]: Programming in C, Fourth Edition by Stephen G. Kochan
+ * [Reference]: This file has been referenced from PES assignment 6.
  *
  ******************************************************************************/
  // This code is taken from Assignment 2 of PES

@@ -11,7 +11,18 @@
 
 #include "enc.h"
 
-void enc_set_autoinc(void) {
+
+/*
+ * Sets Autoincrement bit in ECON2 Register.
+ *
+ * Parameters:
+ *   None
+ *
+ * Returns:
+ *   None
+ */
+void enc_set_autoinc(void) 
+{
 	CS_LOW;
 	SPI_WriteByte(ENC_ECON2);
 	uint8_t data = SPI_ReadByte(); // Read the data from the SPI slave
@@ -22,7 +33,18 @@ void enc_set_autoinc(void) {
 	SPI_WriteByte(data);      // Write the modified data with MSB set
 	CS_HIGH;
 }
-void enc_select_reg_bank(uint8_t bank) {
+
+
+/*
+ * Attempts to Select Register Bank by writing into ECON1 Register.
+ *
+ * Parameters:
+ *   Bank : Bank NUmber
+ * Returns:
+ *   None
+ */
+void enc_select_reg_bank(uint8_t bank) 
+{
 	CS_LOW;
 	SPI_WriteByte(ENC_ECON1); // Send the address
 	uint8_t data = SPI_ReadByte(); // Read the data
@@ -56,7 +78,20 @@ void enc_select_reg_bank(uint8_t bank) {
 	CS_HIGH;
 }
 
-void enc_control_write(int reg_bank, uint8_t addr, uint8_t data) {
+
+/*
+ * Attempts to write to Any of the register in all four banks.
+ *
+ * Parameters:
+ *   Bank   Bank of That Register
+ *   Addr   Address of that register in that particular bank
+ *   Data   Byte of data
+ *
+ * Returns:
+ *   None
+ */
+void enc_control_write(int reg_bank, uint8_t addr, uint8_t data) 
+{
 	uint8_t opcode = ENC_CONTROL_WRITE_OPCODE;
 	addr = addr + opcode;
 	enc_select_reg_bank(reg_bank);
@@ -66,7 +101,19 @@ void enc_control_write(int reg_bank, uint8_t addr, uint8_t data) {
 	CS_HIGH;
 }
 
-void enc_buffer_init(uint16_t start_address, uint16_t end_address) {
+
+/*
+ * Attempts to Initalize Buffer Pointers
+ *
+ * Parameters:
+ *   Start Address of Receive Buffer
+ *   End Address of Receive Buffer
+ *
+ * Returns:
+ *  None
+ */
+void enc_buffer_init(uint16_t start_address, uint16_t end_address) 
+{
 
 	if (start_address > TX_BUFFER_END || end_address > TX_BUFFER_END) {
 		printf("\nInvalid Buffer Range: Start 0x%04X, End 0x%04X\n",
@@ -88,7 +135,20 @@ void enc_buffer_init(uint16_t start_address, uint16_t end_address) {
 			end_address);
 }
 
-void enc_buffer_write(int num_bytes, uint16_t start_address, uint8_t *data_ptr) {
+
+/*
+ * Attempts to write to buffer initalized as transmit Buffer
+ * Prerequisite : Proper Initalization of the Receive Buffer
+ * Parameters:
+ *  Num Of Bytes
+ *  Start Address
+ *  Pointer to data
+ *
+ * Returns:
+ *   None
+ */
+void enc_buffer_write(int num_bytes, uint16_t start_address, uint8_t *data_ptr) 
+{
 	if (num_bytes < 1) {
 		printf("\n\rInvalid number of bytes: %d\n\r", num_bytes);
 		return;
@@ -126,9 +186,18 @@ void enc_buffer_write(int num_bytes, uint16_t start_address, uint8_t *data_ptr) 
 	CS_HIGH; // Pull CS High
 }
 
-
-uint16_t enc_buffer_read(int num_bytes, uint16_t start_address,
-		uint8_t *data_ptr) {
+/*
+ * Attempts to read from the buffer initalized as the receive buffer
+ * Prerequisite : Proper Initalization of the Receive Buffer
+ * Parameters:
+ *   Num of Bytes
+ *   Start Address
+ *
+ * Returns:
+ *   The number of bytes read.
+ */
+uint16_t enc_buffer_read(int num_bytes, uint16_t start_address, uint8_t *data_ptr) 
+{
 	if (num_bytes < 1) {
 		printf("\n\rInvalid number of bytes: %d\n\r", num_bytes);
 		return 0;
@@ -166,7 +235,19 @@ uint16_t enc_buffer_read(int num_bytes, uint16_t start_address,
 	return (uint16_t) num_bytes;
 }
 
-uint8_t enc_mac_read(uint8_t addr, uint8_t bank) {
+
+/*
+ * Attempts to read data from the MAC type register.
+ *
+ * Parameters:
+ *   address of the register
+ *   bank of that register
+ *
+ * Returns:
+ *   8bit data
+ */
+uint8_t enc_mac_read(uint8_t addr, uint8_t bank) 
+{
 	if (addr > ENC_MAC_MAX_ADDRESS) {
 		printf("\nInvalid address: MAC register address range [0, 0x1F]\n");
 		return 0;
@@ -188,13 +269,35 @@ uint8_t enc_mac_read(uint8_t addr, uint8_t bank) {
 	return data;
 }
 
-void enc_busy_wait(void) {
+
+/*
+ * Busy wait checking for ENCchip.
+ *
+ * Parameters:
+ *  None
+ *
+ * Returns:
+ *   None
+ */
+void enc_busy_wait(void) 
+{
 	uint8_t data = enc_mac_read(0x0A, 3); // Read ESTAT register (bank 3)
 	while (data & 0x01) {                 // Wait until BUSY bit clears
 		data = enc_mac_read(0x0A, 3);
 	}
 }
-uint16_t enc_phy_read(uint8_t addr) {
+
+/*
+ * Attempts to read data from the Physical Register
+ *
+ * Parameters:
+ *   address of the Physical Register
+ *
+ * Returns:
+ *   16bit data of the register
+ */
+uint16_t enc_phy_read(uint8_t addr) 
+{
 	enc_control_write(2, ENC_MIREGADR, addr);
 	enc_control_write(2, ENC_MICMD, 1);				//MICMD.MIIRD bit set
 
@@ -210,14 +313,37 @@ uint16_t enc_phy_read(uint8_t addr) {
 	return data;
 }
 
-void enc_phy_write(uint8_t addr, uint16_t data) {
+
+/*
+ * Attempts to write to Physocal Rgister
+ * Parameters:
+ *   Address of the register
+ *   16 bit data to be written
+ *
+ * Returns:
+ *   None
+ */
+void enc_phy_write(uint8_t addr, uint16_t data) 
+{
 	enc_control_write(2, ENC_MIREGADR, addr);
 	enc_control_write(2, ENC_MIWRL, (uint8_t) (data & 0xFF));
 	enc_control_write(2, ENC_MIWRH, (uint8_t) ((data >> 8) & 0xFF));
 	printf("PHY Write: Address 0x%02X, Data 0x%04X\n\r", addr, data);
 }
 
-uint8_t enc_eth_read(uint8_t addr, uint8_t bank) {
+
+/*
+ * Attempts to read data from ETH type register
+ *
+ * Parameters:
+ *   Address
+ *   Bank of the register
+ *
+ * Returns:
+ *   8 bit data
+ */
+uint8_t enc_eth_read(uint8_t addr, uint8_t bank) 
+{
 	if (addr > ENC_MAC_MAX_ADDRESS) {
 		printf("\nInvalid address: MAC register address range [0, 0x1F]\n");
 	}
@@ -237,7 +363,18 @@ uint8_t enc_eth_read(uint8_t addr, uint8_t bank) {
 	return data;
 }
 
-void enc_reset(void) {
+
+/*
+ * Attempts to reset the ENC chip
+ *
+ * Parameters:
+ *   None
+ *
+ * Returns:
+ *   None
+ */
+void enc_reset(void) 
+{
 	CS_LOW;
 
 	SPI_WriteByte(0XFF);
@@ -247,8 +384,17 @@ void enc_reset(void) {
 }
 
 
-
-void enc_init(const uint8_t *mac) {
+/*
+ * Attempts to Initalize the ENC chip
+ *
+ * Parameters:
+ *   MAc Address
+ *
+ * Returns:
+ *   NOne
+ */
+void enc_init(const uint8_t *mac) 
+{
 	// Perform a system reset
 	enc_reset();
 
@@ -327,7 +473,18 @@ void enc_init(const uint8_t *mac) {
 			mac[2], mac[3], mac[4], mac[5]);
 }
 
-void enc_bit_set(uint8_t addr, uint8_t mask) {
+
+/*
+ * Attempts to set a single bit of the particular address
+ *
+ * Parameters:
+ *   address of the register and mask
+ *
+ * Returns:
+ *   None
+ */
+void enc_bit_set(uint8_t addr, uint8_t mask) 
+{
 	uint8_t opcode = BIT_FIELD_SET_OPCODE | addr; // BFS opcode
 	CS_LOW;   // Pull CS Low
 	SPI_WriteByte(opcode);
@@ -335,7 +492,18 @@ void enc_bit_set(uint8_t addr, uint8_t mask) {
 	CS_HIGH;    // Pull CS High
 }
 
-void enc_bit_clear(uint8_t addr, uint8_t mask) {
+
+/*
+ * Attempts to clear the particular bit
+ *
+ * Parameters:
+ *   address and mask of that bit
+ *
+ * Returns:
+ *   None
+ */
+void enc_bit_clear(uint8_t addr, uint8_t mask) 
+{
 	uint8_t opcode = BIT_FIELD_CLEAR_OPCODE | addr; // BFC opcode
 	CS_LOW;  // Pull CS Low
 	SPI_WriteByte(opcode);

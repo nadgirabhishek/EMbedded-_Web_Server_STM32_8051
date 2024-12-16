@@ -12,7 +12,13 @@
 
 #include "global.h"
 
-
+/*******************************************************************************
+ * @brief   Initializes the PCA (Programmable Counter Array).
+ * 
+ * Configures the PCA clock source and enables its functionality.
+ * 
+ * @return  void
+ ******************************************************************************/
 void init_PCA(void)
 {
     //IEN0 |= 0x81;
@@ -20,17 +26,45 @@ void init_PCA(void)
     //P1_6 =1;
     CR=1;
     CMOD |= 0x02;
-}  void start_X2(void)
+}  
+
+
+/*******************************************************************************
+ * @brief   Enables X2 mode for the system clock.
+ * 
+ * Configures the system to operate in X2 mode, doubling the clock speed.
+ * 
+ * @return  void
+ ******************************************************************************/
+void start_X2(void)
 {
     CKCON0 |= ENABLE_X2;
     return;
 }
 
+
+/*******************************************************************************
+ * @brief   Disables X2 mode for the system clock.
+ * 
+ * Configures the system to operate in standard clock mode.
+ * 
+ * @return  void
+ ******************************************************************************/
 void end_X2(void)
 {
     CKCON0 &= (~(ENABLE_X2));
     return;
 }
+
+/*******************************************************************************
+ * @brief   Main entry point for the program.
+ * 
+ * Initializes hardware components, including SPI and PCA, and configures the 
+ * ENC28J60 Ethernet controller. The system enters an infinite loop to process 
+ * incoming packets and manage network operations.
+ * 
+ * @return  int Always returns 0.
+ ******************************************************************************/
 int main(void)
 {
 	/*
@@ -47,8 +81,8 @@ int main(void)
 	CKCON0 |= ENABLE_X2;  // Set bit 0 to enable X2 mode
 	enc_init(device_mac);
 
-
-	while (1) {
-		packetLoop();
+	while (1) 
+	{
+		packetLoop();			//Loop forever and keep calling packetloop()
 	}
 }

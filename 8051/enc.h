@@ -5,7 +5,6 @@
  *              initialization, register access, buffer handling, and PHY operations.
  * @author      Abhishek Koppa
  * @date        December 05, 2024
- * @version     1.0
  ******************************************************************************/
 
 #ifndef ENC_H_
