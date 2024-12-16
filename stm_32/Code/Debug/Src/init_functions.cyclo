@@ -1,5 +1,5 @@
 ../CMSIS/core_cm0.h:623:22:__NVIC_EnableIRQ	2
 ../CMSIS/core_cm0.h:732:22:__NVIC_SetPriority	2
-../Src/init_functions.c:14:6:uart_init	1
-../Src/init_functions.c:31:6:init_uled	1
-../Src/init_functions.c:44:6:SysTick_Init	1
+../Src/init_functions.c:15:6:uart_init	1
+../Src/init_functions.c:32:6:init_uled	1
+../Src/init_functions.c:38:6:SysTick_Init	1

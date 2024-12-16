@@ -1,18 +1,15 @@
-/*
- * main.h
- *
- *  Created on: Nov 4, 2024
- *      Author: nadgi
- */
+/******************************************************************************
+ * @file        main.h
+ * @brief       Global header file for definitions, macros, and variable declarations
+ *              related to the ENC28J60 Ethernet controller, ARP, and network settings.
+ * @author      Abhishek Nadgir
+ * @date        December 05, 2024
+ *****************************************************************************/
 
 #ifndef MAIN_H_
 #define MAIN_H_
 
 #include "global.h"
-
-
-#define INPUT_BUFFER_SIZE 128
-#define ARGUMENT_BUFFER_SIZE 128
 
 cbfifo_t fifotx, fiforx;
 

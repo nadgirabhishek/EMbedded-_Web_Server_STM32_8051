@@ -27,25 +27,25 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   ALLOC
  11 .ARM.attributes 00000028  00000000  00000000  0000606c  2**0
                   CONTENTS, READONLY
- 12 .debug_info   0000453b  00000000  00000000  00006094  2**0
+ 12 .debug_info   00004541  00000000  00000000  00006094  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 13 .debug_abbrev 0000160e  00000000  00000000  0000a5cf  2**0
+ 13 .debug_abbrev 00001648  00000000  00000000  0000a5d5  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 14 .debug_aranges 00000468  00000000  00000000  0000bbe0  2**3
+ 14 .debug_aranges 00000468  00000000  00000000  0000bc20  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 15 .debug_rnglists 00000341  00000000  00000000  0000c048  2**0
+ 15 .debug_rnglists 00000341  00000000  00000000  0000c088  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_macro  000162f0  00000000  00000000  0000c389  2**0
+ 16 .debug_macro  000162db  00000000  00000000  0000c3c9  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   00007da4  00000000  00000000  00022679  2**0
+ 17 .debug_line   00007da4  00000000  00000000  000226a4  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    00069d7e  00000000  00000000  0002a41d  2**0
+ 18 .debug_str    00069da3  00000000  00000000  0002a448  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000086  00000000  00000000  0009419b  2**0
+ 19 .comment      00000086  00000000  00000000  000941eb  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  0000162c  00000000  00000000  00094224  2**2
+ 20 .debug_frame  0000162c  00000000  00000000  00094274  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_line_str 000000ae  00000000  00000000  00095850  2**0
+ 21 .debug_line_str 00000077  00000000  00000000  000958a0  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -2533,11 +2533,11 @@ void uart_init(void) {
  8001074:	000004e2 	.word	0x000004e2
 
 08001078 <SysTick_Init>:
-	NVIC_SetPriority(SysTick_IRQn, 3);
-	SysTick->VAL = 0;
-	SysTick->CTRL = SysTick_CTRL_TICKINT_Msk | SysTick_CTRL_ENABLE_Msk;
+	RCC->AHBENR |= RCC_AHBENR_GPIOAEN;
+	MODIFY_FIELD(GPIOA->MODER, GPIO_MODER_MODER5, ESF_GPIO_MODER_OUTPUT);
+
 }
-*/
+
 void SysTick_Init(void) {
  8001078:	b580      	push	{r7, lr}
  800107a:	af00      	add	r7, sp, #0
@@ -2579,7 +2579,6 @@ int main(void) {
 	 * Clocks: Processor = 48 Mhz. AHB = 48 MHz. APB = 24 MHz.
 	 *
 	 */
-	//init_uled(); //On board LED Initialisation
 	SysTick_Init();
  80010ac:	f7ff ffe4 	bl	8001078 <SysTick_Init>
 	SPI_Init();
@@ -2594,7 +2593,7 @@ int main(void) {
  80010c0:	4b09      	ldr	r3, [pc, #36]	@ (80010e8 <main+0x40>)
  80010c2:	0018      	movs	r0, r3
  80010c4:	f7ff f96b 	bl	800039e <cbfifo_init>
-	printf("\nWelcome to SerialIO!\n");
+	printf("\nWelcome to ESD Demo!\n");
  80010c8:	4b08      	ldr	r3, [pc, #32]	@ (80010ec <main+0x44>)
  80010ca:	0018      	movs	r0, r3
  80010cc:	f001 fdee 	bl	8002cac <puts>
@@ -2970,12 +2969,12 @@ void Init_Interrupt()
  8001338:	40010400 	.word	0x40010400
 
 0800133c <SPI_Init>:
- * SPI Lines as well as Initialization of SPI
  ******************************************************************************/
 
 #include "spi.h"
 
-void SPI_Init(void) {
+void SPI_Init(void) 
+{
  800133c:	b580      	push	{r7, lr}
  800133e:	af00      	add	r7, sp, #0
 	// Enable GPIOB clock

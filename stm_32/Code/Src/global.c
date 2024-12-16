@@ -1,10 +1,10 @@
 /******************************************************************************
  * @file    global.c
- * @brief   Contains gloabl functions for Program.
- *
- * This file provides the implementation for global functions such as interrupts
- ******************************************************************************/
-
+ * @brief   Gloabl functions like ISR routines are mentioned in this file.
+ * 
+ * @author      Abhishek Nadgir
+ * @date        December 05, 2024
+ **************************************************************/
 #include "global.h"
 
 volatile uint32_t tick_counter = 0;

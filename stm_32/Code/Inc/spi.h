@@ -1,9 +1,10 @@
-/*
- * spi.h
- *
- *  Created on: Nov 27, 2024
- *      Author: nadgi
- */
+/******************************************************************************
+ * @file        spi.h
+ * @brief       Header file for SPI (Serial Peripheral Interface) communication
+ *              functions, including initialization, write, and read operations.
+ * @author      Abhishek Nadgir
+ * @date        December 05, 2024
+ **********************************************************************/
 
 #ifndef SPI_H_
 #define SPI_H_

@@ -2,9 +2,13 @@
  * @file    enc.c
  * @brief   Contains functions for basic Functions of ENC Chip Driver
  *
+ * @author      Abhishek Nadgir
+ * @date        December 05, 2024
  * This file provides the implementation for Reading, Writing and Initalising the
  * ENC Chip.
  ******************************************************************************/
+
+
 #include "enc.h"
 /*
  * Sets Autoincrement bit in ECON2 Register.

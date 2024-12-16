@@ -1,9 +1,11 @@
-/*
- * arp.h
- *
- *  Created on: Dec 2, 2024
- *      Author: nadgi
- */
+
+/******************************************************************************
+ * @file        arp.h
+ * @brief       Header file for ARP functionality, including ARP packet structure
+ *              and functions for handling ARP requests and transmission.
+ * @author      Abhishek Nadgir
+ * @date        December 05, 2024
+ ******************************************************************************/
 
 #ifndef ARP_H_
 #define ARP_H_

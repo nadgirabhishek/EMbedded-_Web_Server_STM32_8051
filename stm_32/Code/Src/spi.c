@@ -1,7 +1,10 @@
 /******************************************************************************
+
  * @file    spi.c
  * @brief   Contains functions for establishing SPI Protocol.
  *
+ * @author      Abhishek Nadgir
+ * @date        December 05, 2024
  * This file provides the implementation for transmitting and Receiving data over
  * SPI Lines as well as Initialization of SPI
  ******************************************************************************/

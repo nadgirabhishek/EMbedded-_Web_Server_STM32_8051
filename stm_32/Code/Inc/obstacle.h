@@ -1,10 +1,10 @@
-/*
- * obstacle.h
- *
- *  Created on: Dec 9, 2024
- *      Author: Abhishek Koppa
- */
-
+/******************************************************************************
+ * @file        global.h
+ * @brief       Global header file for definitions, macros, and variable declarations
+ *              related to the ENC28J60 Ethernet controller, ARP, and network settings.
+ * @author      Abhishek Koppa
+ * @date        December 05, 2024
+ ***************************************************************/
 #ifndef OBSTACLE_H_
 #define OBSTACLE_H_
 

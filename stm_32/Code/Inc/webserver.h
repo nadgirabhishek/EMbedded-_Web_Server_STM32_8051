@@ -1,15 +1,16 @@
-/*
- * webserver.h
- *
- *  Created on: Dec 7, 2024
- *      Author: Abhishek Nadgir
- */
 
+/******************************************************************************
+ * @file        webserver.h
+ * @brief       Header file for the web server functionalities, including 
+ *              handling Ethernet, IP, and TCP packet parsing, as well as 
+ *              generating ARP, TCP, and HTTP responses.
+ * @author      Abhishek Nadgir
+ * @date        December 07, 2024
+ *****************************************************************************/
 #ifndef WEBSERVER_H_
 #define WEBSERVER_H_
 
 #include "global.h"
-
 
 extern bool obstacleDetected;
 

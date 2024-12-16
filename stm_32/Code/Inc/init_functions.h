@@ -1,8 +1,11 @@
 /*
- * init_functions.h
- *
- *  Created on: Nov 4, 2024
- *      Author: Abhishek Nadgir
+******************************************************************************
+ * @file        init_functions.h
+ * @brief       Initalisation function for UART and Systick
+ * @author      Abhishek Nadgir
+ * @date        December 05, 2024
+ * @reference   This file is referenced from PES Assignment 6
+ *****************************************************************************
  */
 
 #ifndef INIT_FUNCTIONS_H_

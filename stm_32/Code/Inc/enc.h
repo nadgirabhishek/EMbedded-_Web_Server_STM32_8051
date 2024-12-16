@@ -1,9 +1,12 @@
-/*
- * enc.h
- *
- *  Created on: Dec 6, 2024
- *      Author: nadgi
- */
+
+/******************************************************************************
+ * @file        enc.h
+ * @brief       Header file for ENC28J60 Ethernet controller functions including
+ *              initialization, register access, buffer handling, and PHY operations.
+ * @author      Abhishek Nadgir
+ * @date        December 05, 2024
+ ******************************************************************************
+*/
 
 #ifndef ENC_H_
 #define ENC_H_

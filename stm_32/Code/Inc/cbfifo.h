@@ -1,9 +1,12 @@
-/*
- * cbfifo.h
- *
- *  Created on: Nov 5, 2024
- *      Author: Abhishek Nadgir
- */
+
+/******************************************************************************
+ * @file        cbfifo.h
+ * @brief       Header file for CBFIFO functionality for UART Reception and Transmission
+ * @author      Abhishek Nadgir
+ * @date        December 05, 2024
+ * @reference   This file is referenced from PES Assignment 6
+ ******************************************************************************/
+
 
 #ifndef CBFIFO_H_
 #define CBFIFO_H_

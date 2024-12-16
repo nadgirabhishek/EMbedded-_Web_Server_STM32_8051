@@ -1,10 +1,12 @@
 /*
- * global.h
- *
- *  Created on: Nov 4, 2024
- *      Author: Abhishek Nadgir
+*****************************************************************************
+ * @file        global.h
+ * @brief       Global header file for definitions, macros, and variable declarations
+ *              related to the ENC28J60 Ethernet controller, ARP, and network settings.
+ * @author      Abhishek Nadgir
+ * @date        December 05, 2024
+ *****************************************************************************
  */
-
 #ifndef GLOBAL_H_
 #define GLOBAL_H_
 

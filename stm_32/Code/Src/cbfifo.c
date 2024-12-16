@@ -1,9 +1,4 @@
-/*
- * cbfifo.c
- *
- *  Created on: Nov 5, 2024
- *      Author: Abhishek Nadgir
- */
+
 /*******************************************************************************
  * Copyright (C) 2023 by <Abhishek Nadgir>
  *
@@ -17,15 +12,6 @@
  * [Reference]: This file has been referenced from PES assignment 6.
  *
  ******************************************************************************/
- // This code is taken from Assignment 2 of PES
-/**
- * @file    cbfifo.c
- * @brief   Implementation of Circular Buffer FIFO
- *
- * @author  <Abhishek Nadgir>
- * @date    <09/17/2024>
- *
- */
 
 #include "cbfifo.h"
 

@@ -9,11 +9,6 @@
  *
  * @author      Abhishek Nadgir
  * @date        December 05, 2024
- *
- *
- *
- * @dependencies
- *              - webserver.h
  *************************************************************************/
 
 #include "webserver.h"

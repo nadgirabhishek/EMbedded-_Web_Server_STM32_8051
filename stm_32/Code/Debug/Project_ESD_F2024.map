@@ -562,7 +562,6 @@ Discarded input sections
  .group         0x00000000        0xc ./Src/main.o
  .group         0x00000000        0xc ./Src/main.o
  .group         0x00000000        0xc ./Src/main.o
- .group         0x00000000        0xc ./Src/main.o
  .text          0x00000000        0x0 ./Src/main.o
  .data          0x00000000        0x0 ./Src/main.o
  .bss           0x00000000        0x0 ./Src/main.o
@@ -2387,7 +2386,7 @@ LOAD C:/ST/STM32CubeIDE_1.15.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
 LOAD C:/ST/STM32CubeIDE_1.15.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a
 LOAD C:/ST/STM32CubeIDE_1.15.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v6-m/nofp\libgcc.a
 
-.debug_info     0x00000000     0x453b
+.debug_info     0x00000000     0x4541
  .debug_info    0x00000000      0x20e ./Src/arp.o
  .debug_info    0x0000020e      0x29d ./Src/cbfifo.o
  .debug_info    0x000004ab      0x5f8 ./Src/enc.o
@@ -2398,14 +2397,14 @@ LOAD C:/ST/STM32CubeIDE_1.15.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_info    0x00002397      0x305 ./Src/spi.o
  .debug_info    0x0000269c      0x6a3 ./Src/syscalls.o
  .debug_info    0x00002d3f      0x168 ./Src/sysmem.o
- .debug_info    0x00002ea7      0x57d ./Src/tcp.o
- .debug_info    0x00003424      0x334 ./Src/uart_functions.o
- .debug_info    0x00003758      0x96c ./Src/webserver.o
- .debug_info    0x000040c4       0x30 ./Startup/startup_stm32f091rctx.o
- .debug_info    0x000040f4      0x1f4 ../Lib\libstm_startup.a(clock.o)
- .debug_info    0x000042e8      0x253 ../Lib\libstm_startup.a(system_stm32f0xx.o)
+ .debug_info    0x00002ea7      0x57f ./Src/tcp.o
+ .debug_info    0x00003426      0x334 ./Src/uart_functions.o
+ .debug_info    0x0000375a      0x970 ./Src/webserver.o
+ .debug_info    0x000040ca       0x30 ./Startup/startup_stm32f091rctx.o
+ .debug_info    0x000040fa      0x1f4 ../Lib\libstm_startup.a(clock.o)
+ .debug_info    0x000042ee      0x253 ../Lib\libstm_startup.a(system_stm32f0xx.o)
 
-.debug_abbrev   0x00000000     0x160e
+.debug_abbrev   0x00000000     0x1648
  .debug_abbrev  0x00000000      0x132 ./Src/arp.o
  .debug_abbrev  0x00000132      0x10a ./Src/cbfifo.o
  .debug_abbrev  0x0000023c      0x225 ./Src/enc.o
@@ -2416,12 +2415,12 @@ LOAD C:/ST/STM32CubeIDE_1.15.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_abbrev  0x00000abc      0x135 ./Src/spi.o
  .debug_abbrev  0x00000bf1      0x1b6 ./Src/syscalls.o
  .debug_abbrev  0x00000da7       0xbc ./Src/sysmem.o
- .debug_abbrev  0x00000e63      0x190 ./Src/tcp.o
- .debug_abbrev  0x00000ff3      0x1b4 ./Src/uart_functions.o
- .debug_abbrev  0x000011a7      0x26f ./Src/webserver.o
- .debug_abbrev  0x00001416       0x24 ./Startup/startup_stm32f091rctx.o
- .debug_abbrev  0x0000143a       0xa5 ../Lib\libstm_startup.a(clock.o)
- .debug_abbrev  0x000014df      0x12f ../Lib\libstm_startup.a(system_stm32f0xx.o)
+ .debug_abbrev  0x00000e63      0x1a1 ./Src/tcp.o
+ .debug_abbrev  0x00001004      0x1b4 ./Src/uart_functions.o
+ .debug_abbrev  0x000011b8      0x298 ./Src/webserver.o
+ .debug_abbrev  0x00001450       0x24 ./Startup/startup_stm32f091rctx.o
+ .debug_abbrev  0x00001474       0xa5 ../Lib\libstm_startup.a(clock.o)
+ .debug_abbrev  0x00001519      0x12f ../Lib\libstm_startup.a(system_stm32f0xx.o)
 
 .debug_aranges  0x00000000      0x468
  .debug_aranges
@@ -2492,7 +2491,7 @@ LOAD C:/ST/STM32CubeIDE_1.15.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_rnglists
                 0x00000326       0x1b ../Lib\libstm_startup.a(system_stm32f0xx.o)
 
-.debug_macro    0x00000000    0x162f0
+.debug_macro    0x00000000    0x162db
  .debug_macro   0x00000000      0x27a ./Src/arp.o
  .debug_macro   0x0000027a      0xa9c ./Src/arp.o
  .debug_macro   0x00000d16       0x22 ./Src/arp.o
@@ -2549,47 +2548,46 @@ LOAD C:/ST/STM32CubeIDE_1.15.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_macro   0x00013897       0x40 ./Src/enc.o
  .debug_macro   0x000138d7      0x270 ./Src/global.o
  .debug_macro   0x00013b47      0x292 ./Src/init_functions.o
- .debug_macro   0x00013dd9      0x27f ./Src/main.o
- .debug_macro   0x00014058       0x10 ./Src/main.o
- .debug_macro   0x00014068      0x274 ./Src/obstacle.o
- .debug_macro   0x000142dc      0x27a ./Src/spi.o
- .debug_macro   0x00014556       0x34 ./Src/spi.o
- .debug_macro   0x0001458a      0x274 ./Src/syscalls.o
- .debug_macro   0x000147fe       0x5b ./Src/syscalls.o
- .debug_macro   0x00014859       0x94 ./Src/syscalls.o
- .debug_macro   0x000148ed       0x57 ./Src/syscalls.o
- .debug_macro   0x00014944       0x10 ./Src/syscalls.o
- .debug_macro   0x00014954       0x10 ./Src/syscalls.o
- .debug_macro   0x00014964       0x10 ./Src/syscalls.o
- .debug_macro   0x00014974       0x10 ./Src/syscalls.o
- .debug_macro   0x00014984       0x1c ./Src/syscalls.o
- .debug_macro   0x000149a0       0x52 ./Src/syscalls.o
- .debug_macro   0x000149f2       0x22 ./Src/syscalls.o
- .debug_macro   0x00014a14       0x10 ./Src/syscalls.o
- .debug_macro   0x00014a24       0x52 ./Src/syscalls.o
- .debug_macro   0x00014a76       0xcf ./Src/syscalls.o
- .debug_macro   0x00014b45       0x1c ./Src/syscalls.o
- .debug_macro   0x00014b61       0x3d ./Src/syscalls.o
- .debug_macro   0x00014b9e       0x35 ./Src/syscalls.o
- .debug_macro   0x00014bd3      0x12c ./Src/syscalls.o
- .debug_macro   0x00014cff       0x10 ./Src/syscalls.o
- .debug_macro   0x00014d0f      0x242 ./Src/syscalls.o
- .debug_macro   0x00014f51       0x10 ./Src/syscalls.o
- .debug_macro   0x00014f61      0x18a ./Src/syscalls.o
- .debug_macro   0x000150eb       0x16 ./Src/syscalls.o
- .debug_macro   0x00015101       0xce ./Src/syscalls.o
- .debug_macro   0x000151cf       0xff ./Src/sysmem.o
- .debug_macro   0x000152ce      0x23c ./Src/sysmem.o
- .debug_macro   0x0001550a      0x292 ./Src/tcp.o
- .debug_macro   0x0001579c       0x1c ./Src/tcp.o
- .debug_macro   0x000157b8      0x27a ./Src/uart_functions.o
- .debug_macro   0x00015a32      0x3a0 ./Src/webserver.o
- .debug_macro   0x00015dd2      0x18c ../Lib\libstm_startup.a(clock.o)
- .debug_macro   0x00015f5e       0x16 ../Lib\libstm_startup.a(clock.o)
- .debug_macro   0x00015f74       0x9e ../Lib\libstm_startup.a(clock.o)
- .debug_macro   0x00016012      0x10b ../Lib\libstm_startup.a(clock.o)
- .debug_macro   0x0001611d       0x16 ../Lib\libstm_startup.a(clock.o)
- .debug_macro   0x00016133      0x1bd ../Lib\libstm_startup.a(system_stm32f0xx.o)
+ .debug_macro   0x00013dd9      0x27a ./Src/main.o
+ .debug_macro   0x00014053      0x274 ./Src/obstacle.o
+ .debug_macro   0x000142c7      0x27a ./Src/spi.o
+ .debug_macro   0x00014541       0x34 ./Src/spi.o
+ .debug_macro   0x00014575      0x274 ./Src/syscalls.o
+ .debug_macro   0x000147e9       0x5b ./Src/syscalls.o
+ .debug_macro   0x00014844       0x94 ./Src/syscalls.o
+ .debug_macro   0x000148d8       0x57 ./Src/syscalls.o
+ .debug_macro   0x0001492f       0x10 ./Src/syscalls.o
+ .debug_macro   0x0001493f       0x10 ./Src/syscalls.o
+ .debug_macro   0x0001494f       0x10 ./Src/syscalls.o
+ .debug_macro   0x0001495f       0x10 ./Src/syscalls.o
+ .debug_macro   0x0001496f       0x1c ./Src/syscalls.o
+ .debug_macro   0x0001498b       0x52 ./Src/syscalls.o
+ .debug_macro   0x000149dd       0x22 ./Src/syscalls.o
+ .debug_macro   0x000149ff       0x10 ./Src/syscalls.o
+ .debug_macro   0x00014a0f       0x52 ./Src/syscalls.o
+ .debug_macro   0x00014a61       0xcf ./Src/syscalls.o
+ .debug_macro   0x00014b30       0x1c ./Src/syscalls.o
+ .debug_macro   0x00014b4c       0x3d ./Src/syscalls.o
+ .debug_macro   0x00014b89       0x35 ./Src/syscalls.o
+ .debug_macro   0x00014bbe      0x12c ./Src/syscalls.o
+ .debug_macro   0x00014cea       0x10 ./Src/syscalls.o
+ .debug_macro   0x00014cfa      0x242 ./Src/syscalls.o
+ .debug_macro   0x00014f3c       0x10 ./Src/syscalls.o
+ .debug_macro   0x00014f4c      0x18a ./Src/syscalls.o
+ .debug_macro   0x000150d6       0x16 ./Src/syscalls.o
+ .debug_macro   0x000150ec       0xce ./Src/syscalls.o
+ .debug_macro   0x000151ba       0xff ./Src/sysmem.o
+ .debug_macro   0x000152b9      0x23c ./Src/sysmem.o
+ .debug_macro   0x000154f5      0x292 ./Src/tcp.o
+ .debug_macro   0x00015787       0x1c ./Src/tcp.o
+ .debug_macro   0x000157a3      0x27a ./Src/uart_functions.o
+ .debug_macro   0x00015a1d      0x3a0 ./Src/webserver.o
+ .debug_macro   0x00015dbd      0x18c ../Lib\libstm_startup.a(clock.o)
+ .debug_macro   0x00015f49       0x16 ../Lib\libstm_startup.a(clock.o)
+ .debug_macro   0x00015f5f       0x9e ../Lib\libstm_startup.a(clock.o)
+ .debug_macro   0x00015ffd      0x10b ../Lib\libstm_startup.a(clock.o)
+ .debug_macro   0x00016108       0x16 ../Lib\libstm_startup.a(clock.o)
+ .debug_macro   0x0001611e      0x1bd ../Lib\libstm_startup.a(system_stm32f0xx.o)
 
 .debug_line     0x00000000     0x7da4
  .debug_line    0x00000000      0x777 ./Src/arp.o
@@ -2609,38 +2607,38 @@ LOAD C:/ST/STM32CubeIDE_1.15.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_line    0x00006fac      0x700 ../Lib\libstm_startup.a(clock.o)
  .debug_line    0x000076ac      0x6f8 ../Lib\libstm_startup.a(system_stm32f0xx.o)
 
-.debug_str      0x00000000    0x69d7e
- .debug_str     0x00000000    0x66a41 ./Src/arp.o
-                              0x66c5c (size before relaxing)
- .debug_str     0x00066a41       0x88 ./Src/cbfifo.o
-                               0x728c (size before relaxing)
- .debug_str     0x00066ac9      0x18b ./Src/enc.o
-                              0x66d51 (size before relaxing)
- .debug_str     0x00066c54       0x80 ./Src/global.o
-                              0x66c3a (size before relaxing)
- .debug_str     0x00066cd4      0x5d0 ./Src/init_functions.o
-                              0x672b6 (size before relaxing)
- .debug_str     0x000672a4       0x98 ./Src/main.o
-                              0x66c46 (size before relaxing)
- .debug_str     0x0006733c       0x8c ./Src/obstacle.o
-                              0x66f1f (size before relaxing)
- .debug_str     0x000673c8       0x1b ./Src/spi.o
-                              0x66c28 (size before relaxing)
- .debug_str     0x000673e3     0x1fae ./Src/syscalls.o
+.debug_str      0x00000000    0x69da3
+ .debug_str     0x00000000    0x66a0a ./Src/arp.o
+                              0x66c25 (size before relaxing)
+ .debug_str     0x00066a0a       0x88 ./Src/cbfifo.o
+                               0x7255 (size before relaxing)
+ .debug_str     0x00066a92      0x18b ./Src/enc.o
+                              0x66d1a (size before relaxing)
+ .debug_str     0x00066c1d       0x80 ./Src/global.o
+                              0x66c03 (size before relaxing)
+ .debug_str     0x00066c9d      0x5d0 ./Src/init_functions.o
+                              0x6727f (size before relaxing)
+ .debug_str     0x0006726d       0x69 ./Src/main.o
+                              0x66be0 (size before relaxing)
+ .debug_str     0x000672d6       0x8c ./Src/obstacle.o
+                              0x66ee8 (size before relaxing)
+ .debug_str     0x00067362       0x1b ./Src/spi.o
+                              0x66bf1 (size before relaxing)
+ .debug_str     0x0006737d     0x2039 ./Src/syscalls.o
                                0x9818 (size before relaxing)
- .debug_str     0x00069391       0x66 ./Src/sysmem.o
+ .debug_str     0x000693b6       0x66 ./Src/sysmem.o
                                0x6030 (size before relaxing)
- .debug_str     0x000693f7      0x18a ./Src/tcp.o
-                              0x66e0b (size before relaxing)
- .debug_str     0x00069581       0x76 ./Src/uart_functions.o
-                              0x66c97 (size before relaxing)
- .debug_str     0x000695f7      0x584 ./Src/webserver.o
-                              0x671d9 (size before relaxing)
- .debug_str     0x00069b7b       0x3f ./Startup/startup_stm32f091rctx.o
-                                 0xca (size before relaxing)
- .debug_str     0x00069bba       0xd3 ../Lib\libstm_startup.a(clock.o)
+ .debug_str     0x0006941c      0x18a ./Src/tcp.o
+                              0x66dd4 (size before relaxing)
+ .debug_str     0x000695a6       0x76 ./Src/uart_functions.o
+                              0x66c60 (size before relaxing)
+ .debug_str     0x0006961c      0x584 ./Src/webserver.o
+                              0x671a2 (size before relaxing)
+ .debug_str     0x00069ba0       0x3f ./Startup/startup_stm32f091rctx.o
+                                 0x93 (size before relaxing)
+ .debug_str     0x00069bdf       0xd3 ../Lib\libstm_startup.a(clock.o)
                               0x65cbb (size before relaxing)
- .debug_str     0x00069c8d       0xf1 ../Lib\libstm_startup.a(system_stm32f0xx.o)
+ .debug_str     0x00069cb2       0xf1 ../Lib\libstm_startup.a(system_stm32f0xx.o)
                               0x662d3 (size before relaxing)
 
 .comment        0x00000000       0x86
@@ -2716,6 +2714,6 @@ LOAD C:/ST/STM32CubeIDE_1.15.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_frame   0x0000160c       0x20 C:/ST/STM32CubeIDE_1.15.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v6-m/nofp\libgcc.a(_udivsi3.o)
 
 .debug_line_str
-                0x00000000       0xae
+                0x00000000       0x77
  .debug_line_str
-                0x00000000       0xae ./Startup/startup_stm32f091rctx.o
+                0x00000000       0x77 ./Startup/startup_stm32f091rctx.o

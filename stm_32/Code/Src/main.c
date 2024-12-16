@@ -29,13 +29,12 @@ int main(void) {
 	 * Clocks: Processor = 48 Mhz. AHB = 48 MHz. APB = 24 MHz.
 	 *
 	 */
-	//init_uled(); //On board LED Initialisation
 	SysTick_Init();
 	SPI_Init();
 	uart_init(); //UART 2 Initialisation for Serial COmmunication
 	cbfifo_init(&fiforx); // Initialising RX Buffer
 	cbfifo_init(&fifotx); // Initialising TX buffer
-	printf("\nWelcome to SerialIO!\n");
+	printf("\nWelcome to ESD Demo!\n");
 	enc_init(device_mac);
 	Init_Interrupt();
 	while (1) {

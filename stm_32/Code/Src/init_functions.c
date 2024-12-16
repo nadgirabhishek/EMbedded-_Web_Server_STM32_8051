@@ -1,10 +1,11 @@
-/*
- * init_functions.c
- *
- *  Created on: Nov 4, 2024
- *      Author: Abhishek Nadgir
- */
-
+/******************************************************************************
+ * @file    init_functions.c
+ * @brief   Initalisation function for UART and Systick
+ * 
+ * @author      Abhishek Nadgir
+ * @date        December 05, 2024
+ * @reference   This file is referenced from PES Assignment 6
+ **************************************************************/
 #include "init_functions.h"
 #define F_TIM_CLOCK (48UL*1000UL*1000UL)	// 48 MHz
 #define PWM_FREQUENCY (500)

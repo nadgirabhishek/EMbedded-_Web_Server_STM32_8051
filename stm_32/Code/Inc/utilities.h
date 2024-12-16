@@ -1,10 +1,12 @@
-/*
- * utilities.h
- *
- *  Created on: Jul 21, 2023
- *      Author: lpandit
- */
 
+
+/******************************************************************************
+ * @file        utilities.h
+ * @brief       
+ * @author      lpandit
+ * @date        Jul 21, 2023
+ * @reference   This file is referenced from PES Assignment 6
+ *****************************************************************************/
 #ifndef UTILITIES_H_
 #define UTILITIES_H_
 #include <stdint.h>

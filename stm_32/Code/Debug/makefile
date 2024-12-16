@@ -59,8 +59,8 @@ all: main-build
 main-build: Project_ESD_F2024.elf secondary-outputs
 
 # Tool invocations
-Project_ESD_F2024.elf Project_ESD_F2024.map: $(OBJS) $(USER_OBJS) C:\Users\nadgi\Desktop\New\ folder\ESD\ESD_PROJECT\FINAL\EthernetWebServer_ESD_FinalProject\stm32\assignment6-serialio-nadgirabhishek\STM32F091RCTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "Project_ESD_F2024.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0 -T"C:\Users\nadgi\Desktop\New folder\ESD\ESD_PROJECT\FINAL\EthernetWebServer_ESD_FinalProject\stm32\assignment6-serialio-nadgirabhishek\STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Project_ESD_F2024.map" -Wl,--gc-sections -static -L../Lib -Wl,--whole-archive -lstm_startup -Wl,--no-whole-archive --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Project_ESD_F2024.elf Project_ESD_F2024.map: $(OBJS) $(USER_OBJS) C:\Users\nadgi\Desktop\New\ folder\EMbedded-_Web_Server_STM32_8051\stm_32\Code\STM32F091RCTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "Project_ESD_F2024.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0 -T"C:\Users\nadgi\Desktop\New folder\EMbedded-_Web_Server_STM32_8051\stm_32\Code\STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Project_ESD_F2024.map" -Wl,--gc-sections -static -L../Lib -Wl,--whole-archive -lstm_startup -Wl,--no-whole-archive --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

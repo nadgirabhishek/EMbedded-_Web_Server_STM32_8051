@@ -1,9 +1,12 @@
+
 /******************************************************************************
  * @file    uart_functions.c
- * @brief   Contains functions for transmitting and receiving charcters from UART
- * [Reference]: This file has been referenced from PES assignment 6.
- *
- ******************************************************************************/
+ * @brief   This file contains Uart related Functions.
+ * 
+ * @author      Abhishek Nadgir
+ * @date        December 05, 2024
+ * @reference   This file is referenced from PES Assignment 6
+ **************************************************************/
 
 #include "uart_functions.h"
 /*
