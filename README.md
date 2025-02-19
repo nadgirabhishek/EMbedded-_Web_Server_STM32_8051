@@ -18,7 +18,7 @@ The system consists of the following components:
 
 Below is the **block diagram** of the system:
 
-![System Block Diagram](ESD.jpg)
+![System Block Diagram](ESD.jpg.png)
 
 ## Project Demonstration
 
